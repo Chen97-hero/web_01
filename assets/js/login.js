@@ -64,13 +64,13 @@ $(function () {
           console.log(res.token);
           return layer.msg('登录失败,请重新登录')
         }
-        // console.log(res);
+        console.log(res);
         layer.msg('登录成功')
         // 将登录成功得到的token字符串，保存到本地
         // 服务器会发送一个token字符串 后续登录那些有权限的接口都要带了token才能请求成功
         localStorage.setItem('token', res.token)
         // 跳转到后台主页
-        location.href = '/index.html'
+        location.href = 'index.html'
       }
     })
   })
